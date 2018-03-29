@@ -35,6 +35,7 @@ public class PeopleApplication extends SpringBootServletInitializer{
 			employeeRepository.save(new Employee("John", "Smith", true));
 			employeeRepository.save(new Employee("Jim ", "Morrison", false));
 			employeeRepository.save(new Employee("David", "Gilmour", true));
+			employeeRepository.save(new Employee("Frank", "Song", true));
 			logger.info("The sample data has been generated");
 		};
 	}
