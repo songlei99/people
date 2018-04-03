@@ -28,15 +28,15 @@ public class PeopleApplication extends SpringBootServletInitializer{
 	        return application.sources(applicationClass);
 	    }
 	
-	@Bean
-	public CommandLineRunner setup(EmployeeRepository employeeRepository) {
-		return (args) -> {
-			employeeRepository.save(new Employee("Gustavo", "Ponce", true));
-			employeeRepository.save(new Employee("John", "Smith", true));
-			employeeRepository.save(new Employee("Jim ", "Morrison", false));
-			employeeRepository.save(new Employee("David", "Gilmour", true));
-			employeeRepository.save(new Employee("Jessie", "Tan", true));
-			logger.info("The sample data has been generated");
-		};
-	}
+//	@Bean
+//	public CommandLineRunner setup(EmployeeRepository employeeRepository) {
+//		return (args) -> {
+//			employeeRepository.save(new Employee("Gustavo", "Ponce", true));
+//			employeeRepository.save(new Employee("John", "Smith", true));
+//			employeeRepository.save(new Employee("Jim ", "Morrison", false));
+//			employeeRepository.save(new Employee("David", "Gilmour", true));
+//			employeeRepository.save(new Employee("Jessie", "Tan", true));
+//			logger.info("The sample data has been generated");
+//		};
+//	}
 }
