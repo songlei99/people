@@ -13,6 +13,7 @@ public class Biller {
 	@GeneratedValue
 	private Long id;
 	private String billerName;
+	private String billerCode;
 
 	public Biller() {
 		super();
@@ -38,4 +39,13 @@ public class Biller {
 	public void setBillerName(String billerName) {
 		this.billerName = billerName;
 	}
+
+	public String getBillerCode() {
+		return billerCode;
+	}
+
+	public void setBillerCode(String billerCode) {
+		this.billerCode = billerCode;
+	}
+	
 }
